@@ -1,0 +1,15 @@
+name: java7-oracle-debian
+version: 0.0.1
+inherits: mies/java7-oracle@0.0.1
+type: main
+platform: ubuntu@12.04
+description: Wercker box with Oracle Java7 and Debian package build tools
+keywords:
+  - java
+  - java7
+  - oracle
+  - debian
+  - package
+script: |
+  sudo apt-get update -y  
+  sudo apt-get install fakeroot dpkg -y
